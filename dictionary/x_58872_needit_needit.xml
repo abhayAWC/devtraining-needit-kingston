@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="2" label="Requested Type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element label="Human resources" sequence="0" value="2"/>
+                <element label="legal" sequence="1" value="3"/>
+                <element label="facilities" sequence="2" value="1"/>
+            </choice>
+        </element>
+        <element label="when NeedIt" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
